@@ -1,0 +1,7 @@
+<h1>Add Post</h1>
+<input type="text" [(ngModel)]="formPost.content"/>
+<button (click)="addPost()">Post</button>
+<h1>All Posts</h1>
+@for(p of allPosts; track p.id){
+  <p>{{p.google.userName}}: {{p.content}}</p>
+}
